@@ -1,0 +1,39 @@
+div.main-body {
+    font-size: 1.5rem;
+    display: grid;
+    grid-template-columns: minmax(300px , auto)1fr;   
+    grid-template-areas: "navbar mainContent";
+    grid-gap: 160px;
+}
+   
+nav#navbar {
+    font-size: 1.5rem;
+    grid-area: navbar;
+    position: fixed;   
+}
+   
+nav#navbar a {
+    font-size: 1.5rem;
+    display: block;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 10px 0;
+    text-decoration: none;
+    color: black;
+}
+   
+main#main-doc {
+    grid-area: mainContent;
+}
+   
+header {
+    font-size: 2rem;
+    font-weight: bold;
+}
+   
+code {
+    font-size: 1.25rem;
+    background-color: #CCC;
+    display: block;
+    padding: 20px;
+}

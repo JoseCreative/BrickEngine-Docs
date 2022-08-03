@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+  
+<body>
+    <div class="main-body">
+        <nav id="navbar">
+	    <img src="./icon.png" alt="BrickEngine">
+            <header>BrickEngine Documentation</header>
+            <a href="#Intro" class="nav-link">
+                What is BrickEngine</a>
+            <a href="#Parts" class="nav-link">
+                Parts</a>
+            <a href="#Levels" class="nav-link">
+                Levelss</a>
+        </nav>
+  
+        <main id="main-doc">
+            <section class="main-section" id="Intro">
+                <header>
+                    What is BirckEngine
+                </header>
+                <p>
+                    BrickEngine is a 2d engine build in GameMaker: studio 1.4 used for brickbuidling games
+		    in this engine you can build <b>Levels</b> with <b>Parts</b> imagine it as virtual 2d lego bricks for example
+
+                    fun fact: This engine started as a roblox fangame called "Roblox2D" or "RBLX2D"
+                </p>
+            </section>
+  
+            <section class="main-section" id="Parts">
+                <header>
+                    Part Object
+                </header>
+                <p>
+                    a Part Object (obj_part) is the building brick object of BrickEngine used to build the sctructure of a Level
+		    a Part Object includes the following propeties:
+		    <ul>
+		       <li>SizeX</li>
+		       <li>SizeY</li>
+		       <li>X</li>
+		       <li>Y</li>
+		       <li>ColorId</li>
+		       <li>CanCollide</li>
+		    </ul>
+                </p>
+                <p>
+                    to create a part on the middle of the screen, use the following example code below:
+                </p>
+                <code>
+		    ///THIS CREATES A PART
+                    instance_create(view_xview+(view_wview/2),view_yview+(view_hview/2),obj_part)
+                </code>
+            </section>
+  
+            <section class="main-section" id="Levels">
+                <header>
+                    Levels
+                </header>
+                <p>
+                    a Level is the currentlly loaded map/build on BrickEngine these can be saved in the .blvl format in json formatting
+		    a Level can include these following propeties:
+		    <ul>
+		       <li>SkyColor</li>
+		       <li>LevelName</li>
+		    </ul>
+                </p>
+            </section>
+        </main>
+    </div>
+</body>
+  
+</html>
